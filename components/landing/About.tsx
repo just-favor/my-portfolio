@@ -7,7 +7,7 @@ export default function About() {
   const skills = ["HTML", "CSS", "React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "JavaScript"]
 
   return (
-    <section id="about" className="py-20 bg-muted/50">
+    <section id="about" className="py-16 md:py-20 bg-gray-200 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,14 +28,14 @@ export default function About() {
               viewport={{ once: true }}
               className="space-y-6 border-r-0 md:border-r pr-0 md:pr-8"
             >
-              <p className="text-2xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-2xl text-muted-foreground leading-relaxed">
                 I'm a passionate frontend developer with a love for creating beautiful, 
                 functional web experiences. My journey began with curiosity about how 
                 websites work, and it has evolved into a career focused on building 
                 modern, user-centered applications.
               </p>
               
-              <p className="text-2xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-2xl text-muted-foreground leading-relaxed">
                 I specialize in React and Next.js, always staying current with the 
                 latest technologies and best practices. When I'm not coding, you'll 
                 find me exploring new design trends or contributing to open-source projects.
@@ -49,8 +49,8 @@ export default function About() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h3 className="text-3xl font-bold mb-4 text-center">Technologies I work with</h3>
-              <div className="flex flex-wrap gap-6 mt-10">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">Technologies I work with</h3>
+              <div className="flex flex-wrap gap-3 md:gap-6 mt-6 md:mt-10">
                 {skills.map((skill, index) => (
                   <motion.div
                     key={skill}

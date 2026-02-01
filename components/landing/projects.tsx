@@ -103,13 +103,13 @@ export function Projects() {
             >
               <Card className="h-full flex flex-col overflow-hidden relative group">
                 {project.image && (
-                  <div className="relative w-full h-64 group">
+                  <div className="relative w-fit h-65 group hover:scale-105 transition-all duration-500">
                     <motion.img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.3 }}
+                      className="w-full h-full object-fit"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 1 }}
                     />
                     <motion.div
                       initial={{ opacity: 0 }}

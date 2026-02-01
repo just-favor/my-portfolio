@@ -42,17 +42,17 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="inline-flex items-center text-primary text-2xl font-medium"
+                className="inline-flex items-center text-primary text-lg md:text-2xl font-medium"
               >
                 👋 Hello, I'm
               </motion.div>
               
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+              <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                 <span className="text-foreground">Favour Ogbewe</span>
               </h1>
             </div>
 
-            <p className="text-2xl font-medium text-primary max-w-160 leading-relaxed">
+            <p className="text-lg md:text-2xl font-medium text-primary max-w-160 leading-relaxed">
               Frontend Developer crafting exceptional digital experiences with modern technologies and user-centered design.
             </p>
 
