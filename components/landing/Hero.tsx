@@ -7,7 +7,7 @@ import { HiArrowRight, HiDownload } from "react-icons/hi"
 
 export function Hero() {
   return (
-    <section id="hero" className="min-h-[75vh] md:min-h-[60vh] flex items-center justify-center relative overflow-hidden border-b-2">
+    <section id="hero" className="min-h-[75vh] md:min-h-[60vh] flex items-center justify-center relative overflow-hidden border-b-2 py-6">
       {/* Background gradient */}
       <div className="absolute inset-0" />
       

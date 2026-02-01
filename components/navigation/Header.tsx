@@ -54,12 +54,12 @@ export function Header() {
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <div className="flex flex-col h-full">
                   {/* Header */}
-                  <div className="flex items-center justify-between py-6 px-2 border-b border-border/20">
+                  <div className="flex items-center justify-between pt-6 px-2 border-b border-border/20">
                     <h2 className="text-lg font-semibold">Navigation</h2>
                   </div>
                   
                   {/* Navigation Links */}
-                  <nav className="flex-1 py-8">
+                  <nav className="flex-1 py-4">
                     <div className="space-y-2">
                       {navItems.map((item, index) => (
                         <Link
