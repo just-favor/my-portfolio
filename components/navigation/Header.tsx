@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Menu } from "lucide-react"
+import { HiMenu } from "react-icons/hi"
 import { Button } from "@/components/ui/button"
 import {
   Sheet,
@@ -19,53 +19,57 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur relative">
+      <div className="container mx-auto h-16 px-4">
+        <div className="flex items-center justify-between h-full">
+          {/* Logo */}
+          <Link href="/" className="font-bold text-xl">
+            MY-PORTFOLIO
+          </Link>
 
-        {/* Logo */}
-        <Link href="/" className="font-bold text-xl">
-          MY-PORTFOLIO
-        </Link>
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-6">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-sm font-medium hover:text-primary transition"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6">
-          {navItems.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-sm font-medium hover:text-primary transition"
-            >
-              {item.name}
-            </Link>
-          ))}
-          <ModeToggle />
-        </nav>
-
-        {/* Mobile Nav */}
-        <div className="md:hidden flex items-center gap-2">
-          <ModeToggle />
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon">
-                <Menu className="h-5 w-5" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex flex-col gap-4 mt-10">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="text-lg font-medium"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+          {/* Mobile Nav */}
+          <div className="md:hidden flex items-center gap-2">
+            <ModeToggle />
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="outline" size="icon">
+                  <HiMenu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <div className="flex flex-col gap-4 mt-10">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="text-lg font-medium"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
+      </div>
 
+      {/* Desktop Theme Toggle - Positioned at extreme right edge */}
+      <div className="hidden md:block fixed top-4 right-4 z-50">
+        <ModeToggle />
       </div>
     </header>
   )

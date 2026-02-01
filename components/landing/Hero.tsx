@@ -65,8 +65,7 @@ export function Hero() {
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="#contact">
-                  <HiDownload className="mr-2 h-4 w-4" />
-                  Download CV
+                  Contact Me
                 </Link>
               </Button>
             </div>
