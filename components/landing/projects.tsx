@@ -26,7 +26,7 @@ export function Projects() {
     return (
       <section id="projects" className="py-24">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center md:text-left">
+          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center md:text-left">
             Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -57,8 +57,8 @@ export function Projects() {
                   
                   <div className="p-6 flex flex-col justify-between h-full">
                     <CardHeader>
-                      <CardTitle className="text-lg font-semibold mb-2">{project.title}</CardTitle>
-                      <CardDescription className="text-sm text-muted-foreground line-clamp-3">
+                      <CardTitle className="text-base md:text-lg font-semibold mb-2">{project.title}</CardTitle>
+                      <CardDescription className="text-xs md:text-sm text-muted-foreground line-clamp-3">
                         {project.description}
                       </CardDescription>
                     </CardHeader>
@@ -87,7 +87,7 @@ export function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold mb-12 text-center md:text-left"
+          className="text-2xl md:text-3xl font-bold mb-12 text-center md:text-left"
         >
           Projects
         </motion.h2>
@@ -128,8 +128,8 @@ export function Projects() {
                 
                 <div className="p-6 flex flex-col justify-between h-full">
                   <CardHeader>
-                    <CardTitle className="text-lg font-semibold mb-2">{project.title}</CardTitle>
-                    <CardDescription className="text-sm text-muted-foreground line-clamp-3 mb-4">
+                    <CardTitle className="text-base md:text-lg font-semibold mb-2">{project.title}</CardTitle>
+                    <CardDescription className="text-xs md:text-sm text-muted-foreground line-clamp-3 mb-4">
                       {project.description}
                     </CardDescription>
                   </CardHeader>

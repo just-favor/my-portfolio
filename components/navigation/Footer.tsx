@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Copyright */}
-        <p className="text-sm text-muted-foreground">
+        <p className="text-xs md:text-sm text-muted-foreground">
           © {new Date().getFullYear()} Favour Ogbewe. All rights reserved.
         </p>
 

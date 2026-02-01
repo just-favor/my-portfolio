@@ -17,7 +17,7 @@ export default function About() {
           className="mx-auto"
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
+            <h2 className="text-2xl md:text-5xl font-bold mb-4">About Me</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -49,7 +49,7 @@ export default function About() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">Technologies I work with</h3>
+              <h3 className="text-xl md:text-3xl font-bold mb-4 text-center">Technologies I work with</h3>
               <div className="flex flex-wrap gap-3 md:gap-6 mt-6 md:mt-10">
                 {skills.map((skill, index) => (
                   <motion.div
@@ -59,7 +59,7 @@ export default function About() {
                     transition={{ duration: 0.3, delay: 0.6 + index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <Badge variant="secondary" className="px-4 py-1 text-md font-semibold border-r-2  border-muted-foreground/20">
+                    <Badge variant="secondary" className="px-3 md:px-4 py-1 text-sm md:text-md font-semibold border-r-2 border-muted-foreground/20">
                       {skill}
                     </Badge>
                   </motion.div>
