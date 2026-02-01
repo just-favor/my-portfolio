@@ -11,7 +11,7 @@ import {
 import { ModeToggle } from "@/components/mode-toggle"
 
 const navItems = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
@@ -23,7 +23,7 @@ export function Header() {
       <div className="container mx-auto h-16 px-4">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
-          <Link href="/" className="font-bold text-xl">
+          <Link href="#hero" className="font-bold text-xl">
             MY-PORTFOLIO
           </Link>
 
