@@ -103,7 +103,7 @@ export function Projects() {
             >
               <Card className="h-full flex flex-col overflow-hidden relative group">
                 {project.image && (
-                  <div className="relative w-fit h-65 group hover:scale-105 transition-all duration-500">
+                  <div className="relative w-fit h-50 group hover:scale-105 transition-all duration-500">
                     <motion.img
                       src={project.image}
                       alt={project.title}
